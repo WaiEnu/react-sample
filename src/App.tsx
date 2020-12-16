@@ -6,11 +6,8 @@ import PageA from "./PageA";
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/page_a" exact component={PageA} />
-        <Redirect to="/" />
-      </Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/page_a" exact component={PageA} />
     </BrowserRouter>
   );
 }
