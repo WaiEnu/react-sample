@@ -11,7 +11,7 @@ const Pane: React.FC<Props> = ({
 
   return (
   <Layout title={title}>
-      <div className="p-4 w-full h-full bg-gray-200 rounded-lg overflow-hidden text-left relative">
+      <div className="p-4 w-full h-full bg-gray-200 dark:bg-gray-800 dark:text-gray-200 rounded-lg overflow-hidden text-left relative">
         {children}
       </div>
   </Layout>
