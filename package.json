@@ -1,5 +1,5 @@
 {
-  "name": "next-tailwind-typescript-starter",
+  "name": "react-sample",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
