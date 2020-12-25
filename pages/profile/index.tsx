@@ -1,8 +1,6 @@
 import * as React from 'react'
 import Pane from '../../components/Pane'
 import { ToggleDarkMode } from '../../components/ToggleDarkMode';
-import light from './dark.png'
-import dark from './light.png'
 
 export default function Profile() {
   return (
