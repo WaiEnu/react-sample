@@ -1,3 +1,3 @@
 module.exports = {
-    assetPrefix: "/react-sample",
+    basePath: process.env.NODE_ENV === 'production' ? '/react-sample' : '',
 };
