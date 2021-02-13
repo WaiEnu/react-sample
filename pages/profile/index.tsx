@@ -1,6 +1,8 @@
 import * as React from 'react'
 import Pane from '../../components/Pane'
 import { ToggleDarkMode } from '../../components/ToggleDarkMode';
+import Darkmode from "../../utils/darkmode.svg"
+import DarkmodeLight from "../../utils/darkmode_light.svg"
 
 export default function Profile() {
   return (
@@ -8,8 +10,10 @@ export default function Profile() {
     <h1>Profile Page</h1>
     <div>
       <main>
-        <div className="flex h-full justify-center">
           <ToggleDarkMode />
+        <div className="flex h-full justify-center">
+          <Darkmode className="icon"/>
+          <DarkmodeLight className="iconL"/>
         </div>
       </main>
     </div>
