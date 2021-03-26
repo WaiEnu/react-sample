@@ -1,6 +1,6 @@
 import * as React from 'react'
-import Card from '../components/Card'
-import Menu from '../components/Menu'
+import Card from '../components/atoms/Card'
+import Menu from '../components/templates/Menu'
 import { NextPage } from 'next'
 
 const IndexPage: NextPage = () => {

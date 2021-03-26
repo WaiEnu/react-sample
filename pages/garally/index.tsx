@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Pane from '../../components/Pane'
+import Pane from '../../components/templates/Pane'
 
 export default function Garally() {
   return (

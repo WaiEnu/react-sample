@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Nav from '../components/Nav'
+import Nav from '../atoms/Nav'
 
 type Props = {
   title?: string

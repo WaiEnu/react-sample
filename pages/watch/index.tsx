@@ -1,10 +1,10 @@
 import * as React from 'react'
-import Pane from '../../components/Pane'
-import { Timer } from '../../components/Timer';
+import Pane from '../../components/templates/Pane'
+import { Timer } from '../../components/molecules/Timer';
 
-export default function Works() {
+export default function Watch() {
   return (
-  <Pane title="works">
+  <Pane title="watch">
     <Timer/>
   </Pane>
   );

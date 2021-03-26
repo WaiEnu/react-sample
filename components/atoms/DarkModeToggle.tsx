@@ -1,7 +1,6 @@
-// components/ToggleDarkMode.tsx
 import React, { useEffect, useState } from 'react'
 
-export const ToggleDarkMode = () => {
+export const DarkModeToggle = () => {
   const [darkMode, setDarkMode] = useState(false)
   useEffect(() => {
     if (

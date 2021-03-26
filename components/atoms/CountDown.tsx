@@ -1,5 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
+type Props = {
+  input: number;
+}
 interface Timer {
   time:number
   minute:number
@@ -7,15 +10,14 @@ interface Timer {
 }
 const sec:number = 60
 
-export const Timer = () => {
-  let input:number = 1
+export const CountDown:React.FC<Props> = ({input}) => {
   const [timer, setTimer] = useState<Timer>({
     time:input*sec,
     minute:Math.floor((input*sec - 1) / 60),
     second:input*sec - Math.floor((input*sec - 1) / 60) * 60 - 1
   })
 
-  React.useEffect(()=>{
+  useEffect(()=>{
     setTimeout(()=>{
       if(timer.time === 0) return;
       setTimer({
