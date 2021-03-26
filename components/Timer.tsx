@@ -24,7 +24,6 @@ export const Timer = () => {
         second:timer.time - Math.floor((timer.time - 1) / 60) * 60 - 1
       })
     },1000)
-
   })
 
   return (
