@@ -1,11 +1,11 @@
 import React from 'react'
 import { CountDown } from '../atoms/CountDown'
 
-export const Timer = () => {
+export const Timer:React.FC = ({}) => {
   return (
     <div>
       <main>
-        <CountDown input={1} />
+        <CountDown />
       </main>
     </div>
   )
