@@ -1,10 +1,11 @@
 import * as React from 'react'
 import Pane from '../../components/Pane'
+import { Timer } from '../../components/Timer';
 
 export default function Works() {
   return (
   <Pane title="works">
-    <h1>Works Page</h1>
+    <Timer/>
   </Pane>
   );
 }
