@@ -7,15 +7,9 @@ const IndexPage: NextPage = () => {
   return (
   <Menu title="Home | Next.js + TypeScript Example">
     <Card
-      href="/darken"
+      href="/canvas"
       category="CATEGORY"
-      title="darken"
-      discription="hoto booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
-    ></Card>
-    <Card
-      href="/watch"
-      category="CATEGORY"
-      title="watch"
+      title="Canvas"
       discription="Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
     ></Card>
     <Card
@@ -25,9 +19,15 @@ const IndexPage: NextPage = () => {
       discription="Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
     ></Card>
     <Card
-      href="/about"
+      href="/darken"
       category="CATEGORY"
-      title="About"
+      title="darken"
+      discription="hoto booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+    ></Card>
+    <Card
+      href="/watch"
+      category="CATEGORY"
+      title="watch"
       discription="Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
     ></Card>
   </Menu>

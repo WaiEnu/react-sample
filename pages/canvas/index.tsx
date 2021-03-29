@@ -1,10 +1,10 @@
 import * as React from 'react'
 import Pane from '../../components/templates/Pane'
 
-export default function About() {
+export default function Canvas() {
   return (
-  <Pane title="about">
-    <h1>About Page</h1>
+  <Pane title="canvas">
+    <h1>Canvas Page</h1>
   </Pane>
   );
 }
