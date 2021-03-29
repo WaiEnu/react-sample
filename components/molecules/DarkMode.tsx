@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { DarkModePane } from '../atoms/DarkModePane';
+import Darkmode from "../../utils/darkmode.svg"
+import DarkmodeLight from "../../utils/darkmode_light.svg"
 import { DarkModeToggle } from '../atoms/DarkModeToggle';
 
 export default function DarkMode() {
@@ -7,7 +8,10 @@ export default function DarkMode() {
     <div>
       <main>
         <DarkModeToggle />
-        <DarkModePane />
+        <div className="flex h-full justify-center">
+          <Darkmode className="icon"/>
+          <DarkmodeLight className="iconL"/>
+        </div>
       </main>
     </div>
   );
