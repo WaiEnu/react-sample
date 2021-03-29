@@ -5,16 +5,17 @@ interface Timer {
   minute:number
   second:number
 }
-const input:number = 1
+
 const sec:number = 60
+const init:number = 3
 
 export const CountDown:React.FC = () => {
-  const [count, setCount] = useState(input*sec);
   const [stopd, setStopd] = useState(false);
+  const [input, setInput] = useState(3);
   const [timer, setTimer] = useState<Timer>({
-    time:count,
-    minute:Math.floor(count / 60),
-    second:input*sec - Math.floor(count / 60) * 60
+    time:init*sec,
+    minute:Math.floor(init*sec / 60),
+    second:init*sec - Math.floor(init*sec / 60) * 60
   })
 
   useEffect(()=>{
@@ -28,16 +29,27 @@ export const CountDown:React.FC = () => {
     },1000)
   })
 
-  const countUp = (n:number) => {
-    setCount(n*sec);
+  const handleStop = () => {
+    if(!stopd){
+      setStopd(true)
+    }else{
+      setStopd(false)
+    }
   };
 
-  const start = () => {
-    setStopd(true);
+  const reset = () => {
+    const n=3
+    clearTimeout()
+    setTimer({
+      time:n*sec,
+      minute:Math.floor(n*sec / 60),
+      second:n*sec - Math.floor(n*sec / 60) * 60,
+    })
+    setStopd(true)
   }
 
-  const stop = () => {
-    setStopd(false);
+  const hundleInput = (value:number) => {
+    setInput(value);
   }
 
   return (
@@ -53,24 +65,25 @@ export const CountDown:React.FC = () => {
           <div className="mx-2">
             <button
               className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-              onClick={() => start()}
+              onClick={() => handleStop()}
             >
-              start
+              {stopd?'start':'stop'}
             </button>
           </div>
+          <input
+            type="number"
+            className="outline-none focus:outline-none text-center w-auto bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700"
+            name="custom-input-number"
+            value={input}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+              hundleInput(Number(e.target.value))
+            }}></input>
           <div className="mx-2">
             <button
               className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-              onClick={() => stop()}
+              onClick={() => reset()}
             >
-              stop
-            </button>
-          </div>
-          <div className="mx-2">
-            <button
-              className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-            >
-              {'<+>'}
+              reset
             </button>
           </div>
         </div>
