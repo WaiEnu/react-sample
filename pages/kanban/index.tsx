@@ -1,10 +1,11 @@
 import * as React from 'react'
-import Pane from '../../components/templates/Pane'
+import DashBoard from '../../components/molecules/DashBoard';
+import Board from '../../components/templates/Board';
 
 export default function Watch() {
   return (
-  <Pane title="watch">
-    <h1>Dash Board</h1>
-  </Pane>
+  <Board title="watch">
+    <DashBoard />
+  </Board>
   );
 }

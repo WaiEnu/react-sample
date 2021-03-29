@@ -15,7 +15,7 @@ const IndexPage: NextPage = () => {
     <Card
       href="/garally"
       category="CATEGORY"
-      title="garally"
+      title="Garally"
       discription="Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
     ></Card>
     <Card
@@ -27,13 +27,13 @@ const IndexPage: NextPage = () => {
     <Card
       href="/darken"
       category="CATEGORY"
-      title="darken"
+      title="Darken"
       discription="hoto booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
     ></Card>
     <Card
       href="/watch"
       category="CATEGORY"
-      title="watch"
+      title="Watch"
       discription="Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
     ></Card>
   </Menu>
