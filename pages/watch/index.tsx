@@ -1,11 +1,10 @@
 import * as React from 'react'
 import Pane from '../../components/templates/Pane'
-import { Timer } from '../../components/molecules/Timer';
 
-export default function Watch() {
+export default function Kanban() {
   return (
-  <Pane title="watch">
-    <Timer/>
+  <Pane title="kanban">
+    <div></div>
   </Pane>
   );
 }
